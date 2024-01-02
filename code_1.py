@@ -1,18 +1,21 @@
-a=input('Enter desired string or value: ')
-U=L=D=S=SP=0
-for i in a:
-    if i.isupper():
-        U+=1
-    elif i.islower():
-        L+=1
-    elif i.isdigit():
-        D+=1
-    elif i.isspace():
-        S+=1
+input_string = input('Enter the desired string or value: ')
+
+uppercase_count = lowercase_count = digit_count = space_count = special_char_count = 0
+
+for char in input_string:
+    if char.isupper():
+        uppercase_count += 1
+    elif char.islower():
+        lowercase_count += 1
+    elif char.isdigit():
+        digit_count += 1
+    elif char.isspace():
+        space_count += 1
     else:
-        SP+=1
-print(f'The no. of uppercase letters is {U}')
-print(f'The no. of lowercase letters is {L}') 
-print(f'The no. of digits is {D}')
-print(f'The no. of spaces is {S}')
-print(f'The no. of special characters is {SP}')
+        special_char_count += 1
+
+print(f'The number of uppercase letters is {uppercase_count}')
+print(f'The number of lowercase letters is {lowercase_count}')
+print(f'The number of digits is {digit_count}')
+print(f'The number of spaces is {space_count}')
+print(f'The number of special characters is {special_char_count}')
