@@ -1,3 +1,5 @@
+---
+
 # Character Counter
 
 This C# program takes a user input string and counts the number of uppercase letters, lowercase letters, digits, spaces, and special characters.
@@ -21,3 +23,8 @@ The number of lowercase letters is 8
 The number of digits is 3
 The number of spaces is 2
 The number of special characters is 1
+```
+## Author
+[Simon Paul]
+
+---
